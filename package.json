@@ -4,7 +4,7 @@
   "type": "module",
   "description": "React TypeScript on Replit, using Vite bundler",
   "main": "main.tsx",
-  "homepage": "https://dobe4ever.github.io/better-react-tsx-tailwind",
+  "homepage": "https://dobe4ever.github.io/vitejs-node-ts-tailwind-better-you",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
