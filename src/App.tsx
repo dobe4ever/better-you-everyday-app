@@ -90,7 +90,7 @@ export default function Component() {
   // Rendering starts here...
   return (
     // Main container
-    <div className="bg-gradient-to-r from-orange-400 via-orange-300 to-orange-500 min-h-screen w-full">
+    <div className="bg-white min-h-screen w-full">
       {/* White overlay for fading effect */}
       <div 
         className="absolute inset-0 bg-white transition-opacity duration-300 ease-in-out z-10"
@@ -109,8 +109,8 @@ export default function Component() {
           >
             {/* Skewed orange overlay */}
             <div className="h- flex justify-center items-center">
-              <div className="absolute top-0 left-0 h-[24vh] w-1/2 bg-orange-900/35 origin-top-left transform -skew-y-12"></div>
-              <div className="absolute top-0 right-0 h-[24vh] w-1/2 bg-orange-900/35 origin-top-right transform skew-y-12"></div>
+              <div className="absolute top-0 left-0 h-[24vh] w-1/2 bg-gradient-to-r from-orange-400 via-orange-300 to-orange-500 origin-top-left transform -skew-y-12"></div>
+              <div className="absolute top-0 right-0 h-[24vh] w-1/2 bg-gradient-to-r from-orange-400 via-orange-300 to-orange-500 origin-top-right transform skew-y-12"></div>
             </div>
 
             {/* Top menu */}
@@ -165,7 +165,7 @@ export default function Component() {
         </div>
 
             {/* Widgets wraper */}
-        <div className="flex flex-col overflow-hidden w-full bg-white pt-6 px-3 space-y-2 rounded-t-xl">
+        <div className="flex flex-col overflow-hidden w-full bg- pt-6 px-3 space-y-2 rounded-t-xl">
 
               {/* AI output Widget*/}
               <Widget
