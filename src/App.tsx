@@ -129,7 +129,7 @@ export default function Component() {
 
             {/* Avatar */}
             <div className="w-full py-1 flex justify-center z-10">
-              <div className="rounded-full shadow-xl border-4 border-white overflow-hidden">
+              <div className="rounded-full shadow-xl border-4 border-orange-700 overflow-hidden">
                 <img src="https://i.pravatar.cc/128" alt="Avatar" className="w-56 h-56 object-cover" />
               </div>
             </div>
