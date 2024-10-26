@@ -128,7 +128,7 @@ export default function Component() {
             {/* Avatar */}
             <div className="w-full py-2 flex justify-center z-10">
               <div className="rounded-full shadow-xl border-4 border-orange-400 overflow-hidden">
-                <img src="https://i.pravatar.cc/128" alt="Avatar" className="w-46 h-46 object-cover" />
+                <img src="https://i.pravatar.cc/128" alt="Avatar" className="w-54 h-54 object-cover" />
               </div>
             </div>
 
@@ -165,7 +165,7 @@ export default function Component() {
         </div>
 
             {/* Widgets wraper */}
-        <div className="flex flex-col overflow-hidden w-full bg-white pt-6 px-3 space-y-3 rounded-t-xl">
+        <div className="flex flex-col overflow-hidden w-full bg-white pt-6 px-3 space-y-2 rounded-t-xl">
 
               {/* AI output Widget*/}
               <Widget
