@@ -128,7 +128,7 @@ export default function Component() {
             {/* Avatar */}
             <div className="w-full py-2 flex justify-center z-10">
               <div className="rounded-full shadow-xl border-4 border-orange-400 overflow-hidden">
-                <img src="https://i.pravatar.cc/128" alt="Avatar" className="w-56 h-56 object-cover" />
+                <img src="https://i.pravatar.cc/128" alt="Avatar" className="w-46 h-46 object-cover" />
               </div>
             </div>
 
@@ -139,7 +139,7 @@ export default function Component() {
               transition={{ delay: 1 }}
               className="w-full pt-2 text-center z-10"
             >
-              <h1 className="text-white font-bold text-l">READY TO CRASH SOME HABITS?</h1>
+              <h1 className="text-white font-bold text-xl">READY TO CRASH SOME HABITS?</h1>
             </motion.div>
           </div>
         </div>
