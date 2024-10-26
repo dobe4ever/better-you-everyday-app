@@ -101,14 +101,17 @@ export default function Component() {
       <div className={`relative z-20 transition-colors duration-300 ease-in-out ${fadePercentage === 0 ? 'bg-white' : ''}`}>
 
         {/* Header component */}
-        <div className="container mx-auto"> 
+        <div className="w-full container mx-auto"> 
           <div 
             ref={headerRef}
             className="flex flex-col items-center justify-center transition-opacity duration-300" 
             style={{ opacity: `${fadePercentage / 100}` }}
           >
             {/* Skewed orange overlay */}
-            <div className="absolute -top-5 left-0 right-0 h-[15vh] bg-orange-900/25 origin-top-left transform -skew-y-6"></div>
+            <div className="relative w-full h- flex justify-center items-center">
+  <div className="absolute top-0 left-0 h-[25vh] w-1/2 bg-orange-900/25 origin-top-left transform -skew-y-12"></div>
+  <div className="absolute top-0 right-0 h-[25vh] w-1/2 bg-orange-900/25 origin-top-right transform skew-y-12"></div>
+</div>
 
             {/* Top menu */}
             <div className="w-full pt-2 px-3 flex justify-between items-center text-white text-lg font-semibold z-10">
@@ -125,7 +128,7 @@ export default function Component() {
             {/* Avatar */}
             <div className="w-full py-2 flex justify-center z-10">
               <div className="rounded-full shadow-xl border-4 border-orange-400 overflow-hidden">
-                <img src="https://i.pravatar.cc/128" alt="Avatar" className="w-36 h-36 object-cover" />
+                <img src="https://i.pravatar.cc/128" alt="Avatar" className="w- h- object-cover" />
               </div>
             </div>
 
