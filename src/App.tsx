@@ -21,7 +21,7 @@ const Widget = ({
   className = ""
 }: WidgetProps) => {
   return (
-    <div className={`bg-white rounded-md p-4 border shadow- ${onClick ? 'cursor-pointer' : ''} group ${className}`}>
+    <div className={`bg-white rounded-md p-4 border shadow-md ${onClick ? 'cursor-pointer' : ''} group ${className}`}>
       <div className="flex justify-between items-center mb-0">
         <h2 className="text-lg font-semibold">{title}</h2>
         {rightIcon}
@@ -109,8 +109,8 @@ export default function Component() {
           >
             {/* Skewed orange overlay */}
             <div className="relative w-full h- flex justify-center items-center">
-              <div className="absolute top-0 left-0 h-[20vh] w-1/2 bg-orange-900/25 origin-top-left transform -skew-y-12"></div>
-              <div className="absolute top-0 right-0 h-[20vh] w-1/2 bg-orange-900/25 origin-top-right transform skew-y-12"></div>
+              <div className="absolute top-0 left-0 h-[24vh] w-1/2 bg-orange-900/35 origin-top-left transform -skew-y-12"></div>
+              <div className="absolute top-0 right-0 h-[24vh] w-1/2 bg-orange-900/35 origin-top-right transform skew-y-12"></div>
             </div>
 
             {/* Top menu */}
