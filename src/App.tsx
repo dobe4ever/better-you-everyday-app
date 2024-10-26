@@ -335,11 +335,14 @@ export default function Component() {
                 <p className="text-sm text-gray-400">
                   Better you everyday | Vercel project overview
                 </p>
-                <div className="mt-2">
-                  <button className="bg-orange-400 text-sm text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200">
-                    Go to Project 
-                  </button>
-                </div>
+                  <div className="mt-2">
+                    <a
+                      href="https://vercel.com/dobe4evers-projects/vitejs-node-ts-tailwind-better-you"
+                      className="bg-orange-400 text-sm text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200"
+                    >
+                      Go to Project
+                    </a>
+                  </div>
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gray-100 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-500 ease-out" />
               </Widget>
             )
