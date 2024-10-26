@@ -319,7 +319,7 @@ export default function Component() {
             {showAnnouncement && (
               <Widget 
                 className="relative overflow-hidden"
-                title="Limited Time Offer!"
+                title="Better You Everyday"
                 rightIcon={
                   <button 
                     className="absolute top-4 right-4 text-orange-400 hover:text-orange-600"
@@ -333,11 +333,11 @@ export default function Component() {
                 }
               >
                 <p className="text-sm text-gray-400">
-                  Upgrade to Premium and get 3 months free. Unlock advanced habit tracking features!
+                  Better you everyday | Vercel project overview
                 </p>
                 <div className="mt-2">
                   <button className="bg-orange-400 text-sm text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200">
-                    Upgrade Now
+                    Go to Project 
                   </button>
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gray-100 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-500 ease-out" />
