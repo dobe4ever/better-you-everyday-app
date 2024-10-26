@@ -21,7 +21,7 @@ const Widget = ({
   className = ""
 }: WidgetProps) => {
   return (
-    <div className={`bg-white rounded-md p-4 border shadow-md ${onClick ? 'cursor-pointer' : ''} group ${className}`}>
+    <div className={`bg-white rounded-md p-4 border shadow- ${onClick ? 'cursor-pointer' : ''} group ${className}`}>
       <div className="flex justify-between items-center mb-0">
         <h2 className="text-lg font-semibold">{title}</h2>
         {rightIcon}
@@ -90,7 +90,7 @@ export default function Component() {
   // Rendering starts here...
   return (
     // Main container
-    <div className="bg-gradient-to-r from-orange-400 via-orange-300 to-orange-500 min-h-screen w-full">
+    <div className="bg-gradient-to-r from-orange-400 via-orange-300 to-orange-500 min-h-screen w-full relative">
       {/* White overlay for fading effect */}
       <div 
         className="absolute inset-0 bg-white transition-opacity duration-300 ease-in-out z-10"
@@ -108,10 +108,7 @@ export default function Component() {
             style={{ opacity: `${fadePercentage / 100}` }}
           >
             {/* Skewed orange overlay */}
-            <div className="h- flex justify-center items-center">
-              <div className="absolute top-0 left-0 h-[24vh] w-1/2 bg-orange-900/35 origin-top-left transform -skew-y-12"></div>
-              <div className="absolute top-0 right-0 h-[24vh] w-1/2 bg-orange-900/35 origin-top-right transform skew-y-12"></div>
-            </div>
+            <div className="absolute -top-5 left-0 right-0 h-[15vh] bg-orange-900/25 origin-top-left transform -skew-y-6"></div>
 
             {/* Top menu */}
             <div className="w-full pt-2 px-3 flex justify-between items-center text-white text-lg font-semibold z-10">
@@ -119,16 +116,16 @@ export default function Component() {
                 <Menu className="h-5 w-5" />
                 <div>Hi Brotastic</div>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-4">
                 <Bell className="h-5 w-5" />
                 <UserCircle className="h-5 w-5" />
               </div>
             </div>
 
             {/* Avatar */}
-            <div className="w-full py-1 flex justify-center z-10">
+            <div className="w-full py-2 flex justify-center z-10">
               <div className="rounded-full shadow-xl border-4 border-orange-400 overflow-hidden">
-                <img src="https://i.pravatar.cc/128" alt="Avatar" className="w-56 h-56 object-cover" />
+                <img src="https://i.pravatar.cc/128" alt="Avatar" className="w-36 h-36 object-cover" />
               </div>
             </div>
 
@@ -137,7 +134,7 @@ export default function Component() {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
-              className="w-full pt-1 text-center z-10"
+              className="w-full pt-2 text-center z-10"
             >
               <h1 className="text-white font-bold text-l">READY TO CRASH SOME HABITS?</h1>
             </motion.div>
@@ -147,12 +144,12 @@ export default function Component() {
         {/* Sticky Top */}
         <div className="sticky top-0 z-30">
           <div className="container mx-auto w-[95%] py-3">
-            <div className="flex items-center border-y p-1 m-1 bg-white">
+            <div className="flex items-center border-y p-1 m-2 bg-white">
               <Search className="ml-2 h-4 w-4 text-gray-500" />
               <input
                 type="text"
                 placeholder="AI search"
-                className="flex-grow px-1 py-1 text-sm"
+                className="flex-grow px-3 py-1 text-sm"
               />
               <Mic className="mr-2 h-4 w-4 text-gray-500" />
             </div>
@@ -165,7 +162,7 @@ export default function Component() {
         </div>
 
             {/* Widgets wraper */}
-        <div className="flex flex-col overflow-hidden w-full bg-white pt-6 px-3 space-y-2 rounded-t-xl">
+        <div className="flex flex-col overflow-hidden w-full bg-white pt-6 px-3 space-y-3 rounded-t-xl">
 
               {/* AI output Widget*/}
               <Widget
@@ -319,7 +316,7 @@ export default function Component() {
             {showAnnouncement && (
               <Widget 
                 className="relative overflow-hidden"
-                title="Better You Everyday"
+                title="Limited Time Offer!"
                 rightIcon={
                   <button 
                     className="absolute top-4 right-4 text-orange-400 hover:text-orange-600"
@@ -332,18 +329,13 @@ export default function Component() {
                   </button>
                 }
               >
-              <p className="text-sm text-gray-400">
-                Better you everyday | Vercel project overview
-              </p>
-              <div className="mt-2">
-                <a
-                  href="https://vercel.com/dobe4evers-projects/vitejs-node-ts-tailwind-better-you"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-orange-400 text-sm text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200"
-                >
-                  Go to Project
-                </a>
+                <p className="text-sm text-gray-400">
+                  Upgrade to Premium and get 3 months free. Unlock advanced habit tracking features!
+                </p>
+                <div className="mt-2">
+                  <button className="bg-orange-400 text-sm text-white px-4 py-2 rounded-full hover:bg-orange-600 transition-colors duration-200">
+                    Upgrade Now
+                  </button>
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gray-100 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-500 ease-out" />
               </Widget>
