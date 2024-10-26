@@ -109,7 +109,7 @@ export default function Component() {
           >
             {/* Skewed orange overlay */}
             <div className="h- flex justify-center items-center">
-              <div className="absolute top-0 left-0 h-[24vh] w-1/2 bg-gradient-to-r from-orange-400 via-orange-300 to-orange-500 origin-top-left transform -skew-y-12"></div>
+              <div className="absolute top-0 left-0 h-[24vh] w-1/2 bg-gradient-to-r from-orange-500 via-orange-300 to-orange-400 origin-top-left transform -skew-y-12"></div>
               <div className="absolute top-0 right-0 h-[24vh] w-1/2 bg-gradient-to-r from-orange-400 via-orange-300 to-orange-500 origin-top-right transform skew-y-12"></div>
             </div>
 
