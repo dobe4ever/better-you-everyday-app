@@ -109,8 +109,8 @@ export default function Component() {
           >
             {/* Skewed orange overlay */}
             <div className="h- flex justify-center items-center">
-              <div className="absolute top-0 left-0 h-[24vh] w-1/2 bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 origin-top-left transform -skew-y-12"></div>
-              <div className="absolute top-0 right-0 h-[24vh] w-1/2 bg-gradient-to-r from-orange-300 via-orange-400 to-orange-500 origin-top-right transform skew-y-12"></div>
+              <div className="absolute top-0 left-0 h-[24vh] w-1/2 bg-gradient-to-br from-orange-500 via-orange-400 to-orange-300 origin-top-left transform -skew-y-12"></div>
+              <div className="absolute top-0 right-0 h-[24vh] w-1/2 bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500 origin-top-right transform skew-y-12"></div>
             </div>
 
             {/* Top menu */}
@@ -139,7 +139,7 @@ export default function Component() {
               transition={{ delay: 1 }}
               className="w-full pt-1 text-center z-10"
             >
-              <h1 className="text-white font-bold text-l">READY TO CRASH SOME HABITS?</h1>
+              <h1 className="text-orange-400 font-bold text-xl">READY TO CRASH SOME HABITS?</h1>
             </motion.div>
           </div>
         </div>
