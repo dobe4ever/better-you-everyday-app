@@ -137,7 +137,7 @@ export default function Component() {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1 }}
-              className="w-full pt-2 text-center z-10"
+              className="w-full pt-1 text-center z-10"
             >
               <h1 className="text-white font-bold text-l">READY TO CRASH SOME HABITS?</h1>
             </motion.div>
@@ -147,12 +147,12 @@ export default function Component() {
         {/* Sticky Top */}
         <div className="sticky top-0 z-30">
           <div className="container mx-auto w-[95%] py-3">
-            <div className="flex items-center border-y p-1 m-2 bg-white">
+            <div className="flex items-center border-y p-1 m-1 bg-white">
               <Search className="ml-2 h-4 w-4 text-gray-500" />
               <input
                 type="text"
                 placeholder="AI search"
-                className="flex-grow px-3 py-1 text-sm"
+                className="flex-grow px-1 py-1 text-sm"
               />
               <Mic className="mr-2 h-4 w-4 text-gray-500" />
             </div>
